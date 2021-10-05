@@ -29,6 +29,9 @@ jobs:
         run: echo "My name is $MY_NAME"
         env:
           MY_NAME: Aurora
+          SECRET: ${{secrets.PASSWORD}}
+      - name: BUSTED!
+          run: echo "Dont tell them this $SECRET"
   deploy:
     needs: build
     runs-on: ubuntu-latest
