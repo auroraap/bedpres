@@ -33,6 +33,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           branch: gh-pages
-          run: mkdir dist
+          run: mkdir /home/runner/work/auroraap.github.io/auroraap.github.io/dist
           folder: dist
       # Step 2: Add deploy to Github pages here! Hot tip - The solution is in the Readme
